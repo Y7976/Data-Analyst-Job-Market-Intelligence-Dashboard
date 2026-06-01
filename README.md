@@ -1,205 +1,292 @@
-# Data Analyst Job Market Intelligence & Salary Prediction
+# 📊 Data Analyst Job Market Intelligence
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes job market data to identify hiring trends, skill demand, salary patterns, and recruitment opportunities for Data Analyst roles. The project combines SQL, Python, Power BI, and Machine Learning to generate actionable insights from job postings and predict salaries based on key job attributes.
-
----
-
-## Objectives
-
-- Analyze hiring trends across companies and locations.
-- Identify the most in-demand technical skills.
-- Examine salary distribution across cities and experience levels.
-- Track monthly hiring trends.
-- Build a salary prediction model using Machine Learning.
-- Create an interactive Power BI dashboard.
+The **Data Analyst Job Market Intelligence** project analyzes job postings to identify hiring trends, salary patterns, in-demand skills, and top recruiting companies. The goal is to transform raw job market data into actionable insights for job seekers, students, and recruiters using **SQL, Python, and Power BI**.
 
 ---
 
-## Dataset Information
+## 🎯 Project Objectives
+
+- Analyze current trends in the Data Analyst job market.
+- Identify the most demanded technical and soft skills.
+- Discover top hiring companies and locations.
+- Analyze salary distributions across different roles.
+- Build interactive dashboards for business insights.
+- Develop a machine learning model to predict salaries.
+
+---
+
+## 🗂️ Dataset Information
+
+The dataset contains job postings collected from various job portals and includes information about companies, locations, salaries, job descriptions, and required skills.
 
 ### Dataset Columns
 
-**jobs.csv**
-- job_id:             Unique job identifier.
-- job_title:          Name of the job role.
-- company_id:         Unique company identifier.
-- company_name:       Name of the hiring company.
-- location:           Job location.
-- experience_level:   Required experience level.
-- salary_lpa:         Annual salary offered (LPA).
-- posted_date:        Date of job posting.
+| Column Name | Description |
+|------------|-------------|
+| Job_Title | Title of the job position |
+| Company_Name | Name of the hiring company |
+| Location | Job location |
+| Employment_Type | Full-time, Part-time, Contract, Internship |
+| Experience_Level | Entry, Mid, Senior |
+| Salary_Min | Minimum offered salary |
+| Salary_Max | Maximum offered salary |
+| Average_Salary | Average salary calculated from salary range |
+| Skills | Required technical skills |
+| Industry | Industry category |
+| Remote_Work | Remote or On-site job |
+| Job_Posted_Date | Date when job was posted |
+| Job_Description | Detailed job description |
+| Education_Required | Required educational qualification |
 
-**job_skills.csv**
-- job_id:             Job identifier linked to jobs dataset.
-- skill_name:         Required skill for the job.
-
-**companies.csv**
-- company_id:        Unique company identifier.
-- company_name:      Company name.
-- industry:          Industry category of the company.
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies Used
 
-- SQL (PostgreSQL)
+| Tool | Purpose |
+|--------|---------|
+| Python | Data Cleaning & Analysis |
+| Pandas | Data Manipulation |
+| NumPy | Numerical Operations |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Visualization |
+| SQL | Data Querying & Analysis |
+| Power BI | Interactive Dashboard |
+| Scikit-Learn | Machine Learning |
+
+---
+
+# 🔍 Data Cleaning & Preprocessing
+
+The following preprocessing steps were performed:
+
+### ✅ Missing Value Treatment
+- Removed rows with excessive missing values.
+- Filled missing salary values where applicable.
+
+### ✅ Duplicate Removal
+- Identified and removed duplicate job postings.
+
+### ✅ Data Type Conversion
+- Converted salary columns into numeric format.
+- Converted posting dates into datetime format.
+
+### ✅ Feature Engineering
+- Created Average Salary column.
+- Extracted skill frequencies.
+- Standardized location names.
+
+### ✅ Text Processing
+- Cleaned job descriptions.
+- Removed unnecessary special characters.
+- Standardized skill names.
+
+---
+
+# 📈 Exploratory Data Analysis (EDA)
+
+The dataset was analyzed to answer key business questions.
+
+## 1. Total Number of Job Postings
+
+- Calculated total available jobs in the dataset.
+- Measured overall market demand.
+
+## 2. Top Hiring Companies
+
+- Identified companies posting the highest number of jobs.
+- Ranked companies based on hiring frequency.
+
+## 3. Top Hiring Locations
+
+- Determined cities with maximum job opportunities.
+- Compared job availability across locations.
+
+## 4. Most In-Demand Skills
+
+- Extracted skills from job postings.
+- Counted frequency of each skill.
+- Ranked skills by demand.
+
+### Most Common Skills Identified
+
+- SQL
 - Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-Learn
 - Power BI
-- Git & GitHub
+- Excel
+- Tableau
+- Machine Learning
+- Statistics
+- Data Visualization
+
+## 5. Salary Analysis
+
+- Minimum Salary Distribution
+- Maximum Salary Distribution
+- Average Salary Analysis
+- Salary Comparison by Location
+- Salary Comparison by Experience Level
+
+## 6. Employment Type Analysis
+
+- Full-Time Jobs
+- Contract Jobs
+- Internship Positions
+- Remote Opportunities
+
+## 7. Experience Level Analysis
+
+- Entry-Level Jobs
+- Mid-Level Jobs
+- Senior-Level Jobs
 
 ---
 
-## SQL Analysis
+# 🗄️ SQL Analysis Performed
 
-Performed SQL analysis to answer business questions:
+The following SQL operations were used:
 
-- **Total Job Postings**             –      Calculated the total number of job openings available in the dataset.
-- **Top Hiring Companies**           –      Identified companies with the highest recruitment activity.
-- **Top Hiring Cities**              –      Determined locations with the maximum job opportunities.
-- **Experience Level Distribution**  –      Analyzed hiring demand across experience categories.
-- **Average Salary by City**         –      Compared salary offerings across different locations.
-- **Average Salary by Experience**   –      Evaluated salary growth with increasing experience.
-- **Most Demanded Skills**           –      Identified the most frequently requested technical skills.
-- **Skill Demand Share (%)**         –      Measured the percentage contribution of each skill to total demand.
-- **Industry-wise Hiring Analysis**  –      Examined recruitment patterns across industries.
-- **Monthly Hiring Trend**           –      Tracked changes in hiring activity over time.
+### Aggregate Functions
 
-### SQL Concepts Used
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
 
-- Joins
-- CTEs
-- Window Functions
-- Ranking Functions
-- Aggregate Functions
+### Grouping Operations
+
+- GROUP BY
+- HAVING
+
+### Sorting Operations
+
+- ORDER BY
+
+### Filtering Operations
+
+- WHERE Clause
+
+### Ranking Operations
+
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+
+### Window Functions
+
+- OVER()
+- PARTITION BY()
+
+### Common Table Expressions (CTEs)
+
+- Used for advanced business analysis.
 
 ---
 
-## Python Analysis
+# 📊 Power BI Dashboard
 
-Performed Exploratory Data Analysis (EDA) and statistical analysis.
+An interactive dashboard was developed to visualize key insights.
 
-### Key Insights
+### Dashboard KPIs
 
-- **Data Cleaning**                   –     Processed and prepared data for accurate analysis.
-- **Exploratory Data Analysis (EDA)** –     Explored patterns, trends, and distributions within the dataset.
-- **Descriptive Statistics**          –     Computed statistical measures such as mean, median, and standard deviation.
-- **Salary Distribution Analysis**    –     Analyzed salary spread and variation across job postings.
-- **Company-wise Hiring Analysis**    –     Evaluated recruitment volume across companies.
-- **Location-wise Analysis**          –     Compared job opportunities across cities.
-- **Experience Level Analysis**       –     Assessed hiring demand based on required experience.
-- **Skill Demand Analysis**           –     Examined the popularity of different technical skills.
-- **Hiring Trend Analysis**           –     Visualized hiring patterns over time.
-- **Outlier Detection**               –     Identified unusual salary observations within the dataset.
+- Total Job Postings
+- Average Salary
+- Top Hiring Company
+- Top Hiring Location
+- Most Demanded Skill
+- Remote Job Percentage
 
+### Dashboard Visuals
 
-### Statistical Analysis
+- KPI Cards
+- Bar Charts
+- Line Charts
+- Pie Charts
+- Treemaps
+- Skill Distribution Charts
+- Salary Trend Analysis
+- Hiring Company Analysis
 
-### Statistical Analysis
-
-- **Mean Salary**               –    Calculated the average salary offered across all job postings.
-- **Median Salary**             –    Identified the middle salary value to understand the typical salary level.
-- **Standard Deviation**        –    Measured the variability of salaries around the average salary.
-- **Variance**                  –    Quantified the overall dispersion of salary values within the dataset.
-- **Interquartile Range (IQR)** –    Measured the spread of the middle 50% of salary observations.
-- **Outlier Detection**         –    Identified unusually high or low salary values using the IQR method.
 ---
 
-## Machine Learning
+# 🤖 Machine Learning Model
 
-### Salary Prediction Model
+A Linear Regression model was built to predict salary trends.
 
-Built a Linear Regression model using:
+### Steps Performed
 
-**Features**
-- Company Name
-- Location
-- Experience Level
-
-**Target Variable**
-- Salary (LPA)
-** Model Working**
-- **Feature Engineering**        –   Selected relevant job attributes for salary prediction.
-- **Data Encoding**              –   Converted categorical variables into machine-readable format.
-- **Train-Test Split**           –   Divided data into training and testing datasets.
-- **Linear Regression Modeling** –   Developed a salary prediction model using Linear Regression.
-- **Model Evaluation**           –   Assessed model performance using R² Score, MAE, and RMSE.
+1. Feature Selection
+2. Data Encoding
+3. Train-Test Split
+4. Model Training
+5. Prediction
+6. Performance Evaluation
 
 ### Model Performance
 
 | Metric | Value |
 |----------|----------|
 | R² Score | 0.94 |
-| MAE | 0.93 LPA |
-| RMSE | 1.17 LPA |
 
-The model explains 94% of salary variation and demonstrates strong predictive performance.
+### Interpretation
+
+- The model explains approximately **94% of salary variance**.
+- Indicates strong predictive performance.
 
 ---
 
-## Power BI Dashboard
- 
-- **KPI Development**           –   Created key performance indicators for job market analysis.
-- **Interactive Filtering**     –   Enabled dynamic filtering using slicers.
-- **Hiring Insights Dashboard** –   Visualized company-wise and city-wise hiring trends.
-- **Skill Demand Dashboard**    –   Displayed the most in-demand technical skills.
-- **Salary Insights Dashboard** –   Compared salaries across locations and experience levels.
-- **Trend Analysis Dashboard**  –   Monitored monthly hiring trends through interactive visualizations.
+# 📌 Key Insights
 
-### KPI Cards
+### Hiring Trends
 
-- **Total Jobs**      –   Displays the total number of job postings available in the dataset.
-- **Total Companies** –   Shows the number of unique companies hiring candidates.
-- **Average Salary**  –   Represents the average salary offered across all job postings.
-- **Highest Salary**  –   Highlights the maximum salary offered in the dataset.
-- **Total Skills**    –   Indicates the total number of unique skills required by employers.
+- Data Analyst roles continue to show strong demand.
+- Technology companies contribute the highest number of job postings.
 
-### Visualizations
+### Skills Demand
 
-- **Top Hiring Companies**     –   Identifies companies with the highest number of job openings.
-- **Top Hiring Cities**        –   Displays cities with the greatest hiring activity.
-- **Experience Distribution**  –   Shows the demand for candidates across different experience levels.
-- **Top Skills Analysis**      –   Highlights the most frequently requested technical skills.
-- **Salary by City**           –   Compares average salary offerings across locations.
-- **Salary by Experience**     –   Analyzes salary growth based on experience level.
-- **Monthly Hiring Trend**     –   Tracks changes in hiring activity over time.
+- SQL and Python are the most frequently requested skills.
+- Power BI and Tableau remain highly valued visualization tools.
 
-### Filters
+### Salary Insights
 
-- **Company Name**     –   Filters dashboard insights for a selected company.
-- **Location**         –   Filters data based on job location.
-- **Experience Level** –   Displays insights for a specific experience category.
-- **Skill Name**       –   Filters results according to selected technical skills.
+- Senior-level positions offer significantly higher salaries.
+- Remote positions often provide competitive compensation.
+
+### Geographic Trends
+
+- Major metropolitan areas have the highest concentration of opportunities.
+
 ---
 
-## Key Business Insights
+# 🚀 Business Impact
 
-- Identified the most in-demand technical skills.
-- Determined cities with the highest hiring activity.
-- Analyzed salary trends by location and experience level.
-- Evaluated employer hiring patterns.
-- Predicted salaries using machine learning techniques.
+This project helps:
+
+### Job Seekers
+- Identify high-demand skills.
+- Understand salary expectations.
+- Target high-opportunity locations.
+
+### Recruiters
+- Analyze talent demand trends.
+- Benchmark compensation strategies.
+
+### Educational Institutions
+- Align training programs with industry requirements.
 
 ---
 
 
-
-
-## Results
-Analyzed 5,000+ job postings using SQL and Python to uncover hiring, salary, and skill demand trends.
-Designed an interactive Power BI dashboard for workforce analytics and job market insights.
-Identified top hiring companies, high-demand skills, and location-wise job opportunities.
-Built a Linear Regression model for salary prediction, achieving an R² score of 0.94.
-Delivered actionable insights through data visualization, statistical analysis, and predictive modeling.
+```
 
 ---
 
-## Author
+# 📬 Author
 
-**Yasmin**
+**Yasmin**  
+Aspiring Data Analyst | SQL | Python | Power BI | Machine Learning
 
-Aspiring Data Analyst skilled in SQL, Python, Power BI, Machine Learning, and Data Visualization.
+---
+⭐ If you found this project useful, consider giving it a star.
