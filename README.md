@@ -1,12 +1,12 @@
-# 📊 Data Analyst Job Market Intelligence
-
-## 📌 Project Overview
+# Data Analyst Job Market Intelligence
+![image alt](https://github.com/Y7976/Data-Analyst-Job-Market-Intelligence-Dashboard/blob/9e7a3d489a8dcfa01b234200652f9488385688ad/data_analyst_job_intellegence.png)
+##  Project Overview
 
 The **Data Analyst Job Market Intelligence** project analyzes job postings to identify hiring trends, salary patterns, in-demand skills, and top recruiting companies. The goal is to transform raw job market data into actionable insights for job seekers, students, and recruiters using **SQL, Python, and Power BI**.
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Analyze current trends in the Data Analyst job market.
 - Identify the most demanded technical and soft skills.
@@ -17,7 +17,7 @@ The **Data Analyst Job Market Intelligence** project analyzes job postings to id
 
 ---
 
-## 🗂️ Dataset Information
+##  Dataset Information
 
 The dataset contains job postings collected from various job portals and includes information about companies, locations, salaries, job descriptions, and required skills.
 
@@ -57,34 +57,34 @@ The dataset contains job postings collected from various job portals and include
 
 ---
 
-# 🔍 Data Cleaning & Preprocessing
+#  Data Cleaning & Preprocessing
 
 The following preprocessing steps were performed:
 
-### ✅ Missing Value Treatment
+###  Missing Value Treatment
 - Removed rows with excessive missing values.
 - Filled missing salary values where applicable.
 
-### ✅ Duplicate Removal
+###  Duplicate Removal
 - Identified and removed duplicate job postings.
 
-### ✅ Data Type Conversion
+###  Data Type Conversion
 - Converted salary columns into numeric format.
 - Converted posting dates into datetime format.
 
-### ✅ Feature Engineering
+###  Feature Engineering
 - Created Average Salary column.
 - Extracted skill frequencies.
 - Standardized location names.
 
-### ✅ Text Processing
+###  Text Processing
 - Cleaned job descriptions.
 - Removed unnecessary special characters.
 - Standardized skill names.
 
 ---
 
-# 📈 Exploratory Data Analysis (EDA)
+#  Exploratory Data Analysis (EDA)
 
 The dataset was analyzed to answer key business questions.
 
@@ -143,7 +143,7 @@ The dataset was analyzed to answer key business questions.
 
 ---
 
-# 🗄️ SQL Analysis Performed
+#  SQL Analysis Performed
 
 The following SQL operations were used:
 
@@ -185,7 +185,7 @@ The following SQL operations were used:
 
 ---
 
-# 📊 Power BI Dashboard
+#  Power BI Dashboard
 
 An interactive dashboard was developed to visualize key insights.
 
@@ -211,7 +211,7 @@ An interactive dashboard was developed to visualize key insights.
 
 ---
 
-# 🤖 Machine Learning Model
+#  Machine Learning Model
 
 A Linear Regression model was built to predict salary trends.
 
@@ -237,7 +237,7 @@ A Linear Regression model was built to predict salary trends.
 
 ---
 
-# 📌 Key Insights
+#   Insights
 
 ### Hiring Trends
 
@@ -260,7 +260,7 @@ A Linear Regression model was built to predict salary trends.
 
 ---
 
-# 🚀 Business Impact
+#  Business Impact
 
 This project helps:
 
@@ -279,14 +279,14 @@ This project helps:
 ---
 
 
-```
+
 
 ---
 
-# 📬 Author
+#  Author
 
 **Yasmin**  
 Aspiring Data Analyst | SQL | Python | Power BI | Machine Learning
 
 ---
-⭐ If you found this project useful, consider giving it a star.
+ If you found this project useful, consider giving it a star.
