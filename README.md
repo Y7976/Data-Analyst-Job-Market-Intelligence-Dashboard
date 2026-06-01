@@ -22,23 +22,23 @@ This project analyzes job market data to identify hiring trends, skill demand, s
 ### Dataset Columns
 
 **jobs.csv**
-- job_id: Unique job identifier.
-- job_title: Name of the job role.
-- company_id: Unique company identifier.
-- company_name: Name of the hiring company.
-- location: Job location.
-- experience_level: Required experience level.
-- salary_lpa: Annual salary offered (LPA).
-- posted_date: Date of job posting.
+- job_id:             Unique job identifier.
+- job_title:          Name of the job role.
+- company_id:         Unique company identifier.
+- company_name:       Name of the hiring company.
+- location:           Job location.
+- experience_level:   Required experience level.
+- salary_lpa:         Annual salary offered (LPA).
+- posted_date:        Date of job posting.
 
 **job_skills.csv**
-- job_id: Job identifier linked to jobs dataset.
-- skill_name: Required skill for the job.
+- job_id:             Job identifier linked to jobs dataset.
+- skill_name:         Required skill for the job.
 
 **companies.csv**
-- company_id: Unique company identifier.
-- company_name: Company name.
-- industry: Industry category of the company.
+- company_id:        Unique company identifier.
+- company_name:      Company name.
+- industry:          Industry category of the company.
 ---
 
 ## Tools & Technologies
@@ -58,16 +58,16 @@ This project analyzes job market data to identify hiring trends, skill demand, s
 
 Performed SQL analysis to answer business questions:
 
-- **Total Job Postings** – Calculated the total number of job openings available in the dataset.
-- **Top Hiring Companies** – Identified companies with the highest recruitment activity.
-- **Top Hiring Cities** – Determined locations with the maximum job opportunities.
-- **Experience Level Distribution** – Analyzed hiring demand across experience categories.
-- **Average Salary by City** – Compared salary offerings across different locations.
-- **Average Salary by Experience** – Evaluated salary growth with increasing experience.
-- **Most Demanded Skills** – Identified the most frequently requested technical skills.
-- **Skill Demand Share (%)** – Measured the percentage contribution of each skill to total demand.
-- **Industry-wise Hiring Analysis** – Examined recruitment patterns across industries.
-- **Monthly Hiring Trend** – Tracked changes in hiring activity over time.
+- **Total Job Postings**             –      Calculated the total number of job openings available in the dataset.
+- **Top Hiring Companies**           –      Identified companies with the highest recruitment activity.
+- **Top Hiring Cities**              –      Determined locations with the maximum job opportunities.
+- **Experience Level Distribution**  –      Analyzed hiring demand across experience categories.
+- **Average Salary by City**         –      Compared salary offerings across different locations.
+- **Average Salary by Experience**   –      Evaluated salary growth with increasing experience.
+- **Most Demanded Skills**           –      Identified the most frequently requested technical skills.
+- **Skill Demand Share (%)**         –      Measured the percentage contribution of each skill to total demand.
+- **Industry-wise Hiring Analysis**  –      Examined recruitment patterns across industries.
+- **Monthly Hiring Trend**           –      Tracked changes in hiring activity over time.
 
 ### SQL Concepts Used
 
@@ -85,28 +85,28 @@ Performed Exploratory Data Analysis (EDA) and statistical analysis.
 
 ### Key Insights
 
-- **Data Cleaning** – Processed and prepared data for accurate analysis.
-- **Exploratory Data Analysis (EDA)** – Explored patterns, trends, and distributions within the dataset.
-- **Descriptive Statistics** – Computed statistical measures such as mean, median, and standard deviation.
-- **Salary Distribution Analysis** – Analyzed salary spread and variation across job postings.
-- **Company-wise Hiring Analysis** – Evaluated recruitment volume across companies.
-- **Location-wise Analysis** – Compared job opportunities across cities.
-- **Experience Level Analysis** – Assessed hiring demand based on required experience.
-- **Skill Demand Analysis** – Examined the popularity of different technical skills.
-- **Hiring Trend Analysis** – Visualized hiring patterns over time.
-- **Outlier Detection** – Identified unusual salary observations within the dataset.
+- **Data Cleaning**                   –     Processed and prepared data for accurate analysis.
+- **Exploratory Data Analysis (EDA)** –     Explored patterns, trends, and distributions within the dataset.
+- **Descriptive Statistics**          –     Computed statistical measures such as mean, median, and standard deviation.
+- **Salary Distribution Analysis**    –     Analyzed salary spread and variation across job postings.
+- **Company-wise Hiring Analysis**    –     Evaluated recruitment volume across companies.
+- **Location-wise Analysis**          –     Compared job opportunities across cities.
+- **Experience Level Analysis**       –     Assessed hiring demand based on required experience.
+- **Skill Demand Analysis**           –     Examined the popularity of different technical skills.
+- **Hiring Trend Analysis**           –     Visualized hiring patterns over time.
+- **Outlier Detection**               –     Identified unusual salary observations within the dataset.
 
 
 ### Statistical Analysis
 
 ### Statistical Analysis
 
-- **Mean Salary** – Calculated the average salary offered across all job postings.
-- **Median Salary** – Identified the middle salary value to understand the typical salary level.
-- **Standard Deviation** – Measured the variability of salaries around the average salary.
-- **Variance** – Quantified the overall dispersion of salary values within the dataset.
-- **Interquartile Range (IQR)** – Measured the spread of the middle 50% of salary observations.
-- **Outlier Detection** – Identified unusually high or low salary values using the IQR method.
+- **Mean Salary**               –    Calculated the average salary offered across all job postings.
+- **Median Salary**             –    Identified the middle salary value to understand the typical salary level.
+- **Standard Deviation**        –    Measured the variability of salaries around the average salary.
+- **Variance**                  –    Quantified the overall dispersion of salary values within the dataset.
+- **Interquartile Range (IQR)** –    Measured the spread of the middle 50% of salary observations.
+- **Outlier Detection**         –    Identified unusually high or low salary values using the IQR method.
 ---
 
 ## Machine Learning
@@ -123,11 +123,11 @@ Built a Linear Regression model using:
 **Target Variable**
 - Salary (LPA)
 ** Model Working**
-  - **Feature Engineering** – Selected relevant job attributes for salary prediction.
-- **Data Encoding** – Converted categorical variables into machine-readable format.
-- **Train-Test Split** – Divided data into training and testing datasets.
-- **Linear Regression Modeling** – Developed a salary prediction model using Linear Regression.
-- **Model Evaluation** – Assessed model performance using R² Score, MAE, and RMSE.
+- **Feature Engineering**        –   Selected relevant job attributes for salary prediction.
+- **Data Encoding**              –   Converted categorical variables into machine-readable format.
+- **Train-Test Split**           –   Divided data into training and testing datasets.
+- **Linear Regression Modeling** –   Developed a salary prediction model using Linear Regression.
+- **Model Evaluation**           –   Assessed model performance using R² Score, MAE, and RMSE.
 
 ### Model Performance
 
@@ -142,38 +142,38 @@ The model explains 94% of salary variation and demonstrates strong predictive pe
 ---
 
 ## Power BI Dashboard
-
-- **KPI Development** – Created key performance indicators for job market analysis.
-- **Interactive Filtering** – Enabled dynamic filtering using slicers.
-- **Hiring Insights Dashboard** – Visualized company-wise and city-wise hiring trends.
-- **Skill Demand Dashboard** – Displayed the most in-demand technical skills.
-- **Salary Insights Dashboard** – Compared salaries across locations and experience levels.
-- **Trend Analysis Dashboard** – Monitored monthly hiring trends through interactive visualizations.
+ 
+- **KPI Development**           –   Created key performance indicators for job market analysis.
+- **Interactive Filtering**     –   Enabled dynamic filtering using slicers.
+- **Hiring Insights Dashboard** –   Visualized company-wise and city-wise hiring trends.
+- **Skill Demand Dashboard**    –   Displayed the most in-demand technical skills.
+- **Salary Insights Dashboard** –   Compared salaries across locations and experience levels.
+- **Trend Analysis Dashboard**  –   Monitored monthly hiring trends through interactive visualizations.
 
 ### KPI Cards
 
-- **Total Jobs** – Displays the total number of job postings available in the dataset.
-- **Total Companies** – Shows the number of unique companies hiring candidates.
-- **Average Salary** – Represents the average salary offered across all job postings.
-- **Highest Salary** – Highlights the maximum salary offered in the dataset.
-- **Total Skills** – Indicates the total number of unique skills required by employers.
+- **Total Jobs**      –   Displays the total number of job postings available in the dataset.
+- **Total Companies** –   Shows the number of unique companies hiring candidates.
+- **Average Salary**  –   Represents the average salary offered across all job postings.
+- **Highest Salary**  –   Highlights the maximum salary offered in the dataset.
+- **Total Skills**    –   Indicates the total number of unique skills required by employers.
 
 ### Visualizations
 
-- **Top Hiring Companies** – Identifies companies with the highest number of job openings.
-- **Top Hiring Cities** – Displays cities with the greatest hiring activity.
-- **Experience Distribution** – Shows the demand for candidates across different experience levels.
-- **Top Skills Analysis** – Highlights the most frequently requested technical skills.
-- **Salary by City** – Compares average salary offerings across locations.
-- **Salary by Experience** – Analyzes salary growth based on experience level.
-- **Monthly Hiring Trend** – Tracks changes in hiring activity over time.
+- **Top Hiring Companies**     –   Identifies companies with the highest number of job openings.
+- **Top Hiring Cities**        –   Displays cities with the greatest hiring activity.
+- **Experience Distribution**  –   Shows the demand for candidates across different experience levels.
+- **Top Skills Analysis**      –   Highlights the most frequently requested technical skills.
+- **Salary by City**           –   Compares average salary offerings across locations.
+- **Salary by Experience**     –   Analyzes salary growth based on experience level.
+- **Monthly Hiring Trend**     –   Tracks changes in hiring activity over time.
 
 ### Filters
 
-- **Company Name** – Filters dashboard insights for a selected company.
-- **Location** – Filters data based on job location.
-- **Experience Level** – Displays insights for a specific experience category.
-- **Skill Name** – Filters results according to selected technical skills.
+- **Company Name**     –   Filters dashboard insights for a selected company.
+- **Location**         –   Filters data based on job location.
+- **Experience Level** –   Displays insights for a specific experience category.
+- **Skill Name**       –   Filters results according to selected technical skills.
 ---
 
 ## Key Business Insights
