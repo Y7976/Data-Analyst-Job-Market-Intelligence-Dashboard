@@ -1139,7 +1139,13 @@ This project helps:
 - Align training programs with industry requirements.
 
 ---
+##  Future Scope
 
+- Integrate real-time job data from job portals and APIs.
+- Expand analysis to multiple job roles and industries.
+- Implement advanced Machine Learning models for improved salary prediction.
+- Develop a skill recommendation system based on market demand.
+- Enable automated dashboard updates with real-time data refresh.
 
 
 
